@@ -16,6 +16,8 @@ require 'pry'
   
 def remove_strawberry(contacts)
 
-contacts["Freddy Mercury"][:favorite_ice_cream_flavors].reject! {|k,v| v == "strawberry"}
+contacts.each do |person, contact_details_hash|
+  binding.pry
+end
 
 end
